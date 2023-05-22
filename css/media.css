@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+.header__wrapper {
+    padding: 35px 50px 35px 50px;
+}
+
+.welcome {
+    border: none;
+    box-shadow: none;
+}
+
+.welcome__wrapper {
+    flex-direction: row;
+    padding: 40px 50px 70px 50px;
+}
+
+.welcome__content {
+    max-width: 346px;
+}
+
+.welcome__image {
+    background-image: url("../img/leafs__tablet.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 254px;
+    background-position-x: -6px ;
+    background-position-y: -11px ;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.welcome__content-text {
+    margin-bottom: 30px;
+}
+
+.about__wrapper {
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 668px;
+}
+
+.about__title {
+    text-align: center;
+}
+
+.about__subtitle {
+    margin-bottom: 40px;
+}
+
+.service__wrapper {
+    padding: 0 50px;
+}
+
+
+.service__header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.service__title {
+    margin-bottom: 40px;
+}
+
+.service__buttons {
+    margin-bottom: 40px;
+}
+
+.service__cards {
+    padding: 0 50px;
+    padding-bottom: 70px;
+}
+
+.service__card {
+    max-width: 281px;
+}
+
+.prices__wrapper {
+    padding: 0 50px;
+}
+
+.contactUs_wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding:0 50px;
+}
+
+.contactUs__content {
+    width: auto;
+}
+}
