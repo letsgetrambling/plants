@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+.header {
+    max-width:100%;
+}
 .header__wrapper {
     padding: 35px 50px 35px 50px;
 }
@@ -10,33 +13,38 @@
 
 .welcome__wrapper {
     flex-direction: row;
-    padding: 40px 50px 70px 50px;
+    padding: 37px 50px 32px 50px;
+    background-image: url(../img/leafs__tablet.png);
+    justify-content: flex-start;
+    background-position-x: 428px;
+    background-position-y: 28px;
 }
 
 .welcome__content {
     max-width: 346px;
-}
-
-.welcome__image {
-    background-image: url("../img/leafs__tablet.png");
-    background-repeat: no-repeat;
-    width: 280px;
-    height: 254px;
-    background-position-x: -6px ;
-    background-position-y: -11px ;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 h1 {
-    margin-bottom: 30px;
+    font-size: 35px;
+    margin-bottom: 31px;
 }
 
 .welcome__content-text {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 5px;
 }
 
 .about__wrapper {
     flex-direction: column;
-    margin-top: 40px;
+    padding-top: 42px;
+    padding-bottom: 381px;
+    background-image: url(../img/houseplant__tablet.png);
+    background-position-x: 259px;
+    background-position-y: 430px;
 }
 
 .about__content {
@@ -48,6 +56,9 @@ h1 {
 
 .about__title {
     text-align: center;
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 49px;
 }
 
 .about__subtitle {
@@ -63,28 +74,81 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
 }
 
 .service__title {
-    margin-bottom: 40px;
+    padding-bottom: 43px;
+    font-size: 35px;
+    line-height: 46px;
 }
 
 .service__buttons {
-    margin-bottom: 40px;
+    
 }
 
 .service__cards {
     padding: 0 50px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
+    row-gap: 38px;
+    margin-bottom: 0;
 }
 
 .service__card {
     max-width: 281px;
 }
 
+.service__card-thumb {
+    margin-bottom: 0px;
+}
+
+.service__card-title {
+    padding-top: 5px;
+}
+
+.service__card-subtitle {
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
 .prices__wrapper {
     padding: 0 50px;
+}
+
+.prices__prices {
+    padding-bottom: 164px;
+}
+
+.prices__prices-title {
+    padding-top: 40px;
+    padding-left: 14px;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 58px;
+}
+
+.prices__items {
+    padding-left: 3px;
+}
+
+.third__item {
+    margin-bottom: 32px;
+}
+
+.prices__help {
+    background-position-x: 181px;
+    background-position-y: 318px;
+}
+
+.prices__help-title {
+    font-size: 25px;
+    line-height: 35px;
+    padding-top: 140px;
+    margin-bottom: 28px;
+}
+
+.prices__help-button {
+    padding-bottom: 10px;
 }
 
 .contactUs_wrapper {
@@ -92,9 +156,40 @@ h1 {
     justify-content: center;
     align-items: center;
     padding:0 50px;
+    background-image: url(../img/tablet_woman.png);
+    background-position-y: 490px;
+    background-position-x: 294px;
 }
 
 .contactUs__content {
-    width: auto;
+  width: auto;
+}
+
+.contactUs__title {
+    right: -129px;
+    padding-top: 41px;
+}
+
+.contactUs__form {
+    padding-top: 99px;
+    padding-bottom: 496px;
+}
+
+.footer__wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer__left {
+    margin-right: 0;
+    column-gap: 23px;
+}
+
+.copyright {
+    margin-right: 0;
+}
+
+.year {
+    margin-right: 0;
 }
 }

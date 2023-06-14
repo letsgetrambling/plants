@@ -1,0 +1,20 @@
+{
+  "name": "plants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass css/style2.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsgetrambling/plants.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letsgetrambling/plants/issues"
+  },
+  "homepage": "https://github.com/letsgetrambling/plants#readme"
+}
