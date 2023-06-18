@@ -83,41 +83,92 @@ const formBasics = document.querySelector(".form__basics");
 const formStandard = document.querySelector(".form__standard");
 const formCare = document.querySelector(".form__care");
 const accordionBasics = document.querySelector(".accordion.basics");
+const accordionStandard = document.querySelector(".accordion.standard");
+const accordionCare = document.querySelector(".accordion.care");
+const basicsCloseButton = document.querySelector(".acc__btn__basics");
+const standardCloseButton = document.querySelector(".acc__btn__standard");
+const careCloseButton = document.querySelector(".acc__btn__care");
 formBasics.addEventListener("click", activeBasics);
 function activeBasics() {
     accordionBasics.classList.add("active");
     accordionStandard.classList.remove("active");
     accordionCare.classList.remove("active");
     };
-const basicsCloseButton = document.querySelector(".acc__btn__basics");
 basicsCloseButton.addEventListener("click", closeBasics);
 function closeBasics() {
     accordionBasics.classList.remove("active");
 }
-
-
-
-const accordionStandard = document.querySelector(".accordion.standard");
 formStandard.addEventListener("click", activeStandard);
 function activeStandard() {
     accordionStandard.classList.add("active");
+    accordionBasics.classList.remove("active");
+    accordionCare.classList.remove("active");
     };
-const standardCloseButton = document.querySelector(".acc__btn__standard");
+
 standardCloseButton.addEventListener("click", closeStandard);
 function closeStandard() {
     accordionStandard.classList.remove("active");
 }
 
-
-const accordionCare = document.querySelector(".accordion.care");
 formCare.addEventListener("click", activeCare);
 function activeCare() {
     accordionCare.classList.add("active");
+    accordionBasics.classList.remove("active");
+    accordionStandard.classList.remove("active");
     };
-const careCloseButton = document.querySelector(".acc__btn__care");
+
 careCloseButton.addEventListener("click", closeCare);
 function closeCare() {
     accordionCare.classList.remove("active");
 }
+  /*  Contacts select */
+
+  const contactButton = document.querySelector('.contacts__form');
+  const dropdownList = document.querySelector('.dropdown__list');
+  const select = document.querySelector('.contacts__form select');
+  const item = document.querySelectorAll('.dropdown__list-item');
+  const optionCity = document.querySelector('.contacts__form option');
+  const canandaigua = document.querySelector('.canandaigua');
+  const yonkers = document.querySelector('.yonkers');
+  const sherill = document.querySelector('.sherill');
+  const newYork = document.querySelector('.newYork');
+  const offices = document.querySelector('.offices');
+  const callUs = document.querySelector('.Callus');
+
+  contactButton.addEventListener('click', visibleDropdown);
+  function visibleDropdown() {
+  dropdownList.classList.toggle('dropdown__list--visible');
+  select.classList.toggle('select--active');
+  };
+
+  item.forEach(function (listItem) {
+    listItem.addEventListener('click', function (e) {
+    e.stopPropagation();  
+    optionCity.innerText = this.innerText;
+    dropdownList.classList.remove('dropdown__list--visible');
+    if ( this.dataset.value === 'canandaigua') {
+    canandaigua.classList.add('canandaigua--visible');
+    } else if (this.dataset.value === 'ny') {
+        newYork.classList.add('canandaigua--visible');
+    } else if (this.dataset.value === 'yonkers') {
+        yonkers.classList.add('canandaigua--visible');
+    } else {
+        sherill.classList.add('canandaigua--visible');
+    }
+            })
+  });
+
+   // Клик снаружи дропдауна. Закрыть дропдаун
+   document.addEventListener('click', function(e) {
+    if (e.target !== canandaigua ) {
+        console.log('Click');
+        canandaigua.classList.remove('canandaigua--visible');
+        yonkers.classList.remove('canandaigua--visible');
+        sherill.classList.remove('canandaigua--visible');
+        newYork.classList.remove('canandaigua--visible');
+    }
+   });
+
+   //Вызов по номеру при нажатии кнопки
 
 

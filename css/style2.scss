@@ -834,6 +834,7 @@ body.active {
     background-position: center bottom;
   }
   &__content {
+    position: relative;
     width: 35.45rem;
     height: 6.9rem;
     display: flex;
@@ -903,10 +904,106 @@ body.active {
     letter-spacing: 0.05em;
     color: #717171;
     padding-left: 0.9rem;
+    cursor: pointer;
     @media (max-width: 380px) {
       width: 15rem;
       background-position: right 0.95rem center;
     }
+  }
+  .select--active {
+    background-color: #c1e698;
+    box-shadow: none;
+    background-image: url(../img/svg/drop_btn-active.svg);
+  }
+
+  .office {
+    display: none;
+    position: absolute;
+    top: 244px;
+    left: 259px;
+    padding: 17px 113px 31px 35px;
+    background: #edf2ec;
+    border: 1px solid #000000;
+    border-radius: 20px;
+  }
+
+  .canandaigua--visible {
+    display: block;
+  }
+
+  .officeCategory {
+    display: inline-block;
+    width: 128px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+
+  .officeValue {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #717171;
+  }
+
+  .dropdown__list {
+    display: none;
+    position: absolute;
+    top: 221px;
+    width: 450px;
+    height: 234px;
+    padding: 27px 50px 31px 20px;
+    background: #dce9d9;
+    cursor: pointer;
+  }
+
+  .dropdown__list--visible {
+    display: block;
+  }
+
+  .dropdown__list-item {
+    padding-bottom: 8px;
+    padding-left: 4px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #499a18;
+  }
+
+  .dropdown__list-item:after {
+    content: " ";
+    display: block;
+    background: #d9d9d9;
+    height: 1px;
+  }
+
+  .callUs {
+    display: block;
+    border: 1px solid #e06733;
+    border-radius: 5px;
+    width: 122px;
+    padding: 5px 29px 6px 29px;
+    margin-top: 18px;
+    margin-left: 127px;
+    background-color: #edf2ec;
+    font-family: "Inika";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
   }
 }
 
